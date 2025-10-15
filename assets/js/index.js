@@ -1,9 +1,5 @@
 const header = document.querySelector('header');
 
-
-
-
-
 window.addEventListener('scroll', function () {
     const headerTop = document.querySelector('header')
 
@@ -19,7 +15,6 @@ window.addEventListener('scroll', function () {
 
 
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
 const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme) {
@@ -30,7 +25,6 @@ if (savedTheme) {
 
 
 
-
 function updateImages(theme) {
   const images = document.querySelectorAll("img[data-light][data-dark]");
   images.forEach(img => {
@@ -38,8 +32,6 @@ function updateImages(theme) {
     img.src = newSrc;
   });
 }
-
-
 
 const initialTheme = document.documentElement.getAttribute("data-theme");
 updateImages(initialTheme);
