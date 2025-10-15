@@ -44,16 +44,7 @@ function updateImages(theme) {
 const initialTheme = document.documentElement.getAttribute("data-theme");
 updateImages(initialTheme);
 
-const themeToggle = document.getElementById("theme-toggle");
 
-themeToggle.addEventListener("click", () => {
-  const currentTheme = document.documentElement.getAttribute("data-theme");
-  const newTheme = currentTheme === "dark" ? "light" : "dark";
-  document.documentElement.setAttribute("data-theme", newTheme);
-  localStorage.setItem("theme", newTheme);
-    updateImages(newTheme);
-
-});
 
 
 const parallaxBlocks = document.querySelectorAll(".parallax-anim");

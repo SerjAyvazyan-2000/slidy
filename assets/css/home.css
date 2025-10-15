@@ -308,12 +308,17 @@
   max-width: 519px;
   width: 100%;
 }
-.possibilities-slide-wrapper {
-  gap: 10px;
-}
+
 .possibilities-header {
   gap: 10px;
   justify-content: space-between;
+}
+
+
+@media (min-width: 992px) {
+  .possibilities-swiper .swiper-slide {
+    width: auto !important;
+  }
 }
 .possibilities-titles {
   max-width: 674px;
@@ -724,15 +729,11 @@
 .work-process-mobile-ctn {
   display: none;
 }
-.mobile-slide {
-  display: none !important;
-}
+
 .possibilities-swiper-pagination {
   display: none !important;
 }
-.possibilities-average-slide {
-  max-width: 100%;
-}
+
 .f-right-average-decor {
   display: none;
 }
@@ -757,6 +758,9 @@
 @media (max-width: 992px) {
   .media-left-column {
     display: none;
+  }
+  .possibilities-average-slide{
+    max-width: 100%;
   }
   .media-right-column {
     display: none;
@@ -796,12 +800,7 @@
   .p-big-slide-media {
     max-width: 290px;
   }
-  .desktop-slide {
-    display: none;
-  }
-  .mobile-slide {
-    display: block !important;
-  }
+
   .possibilities-big-slide {
     max-width: 100%;
   }
