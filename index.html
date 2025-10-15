@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slidy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-body G-align-center">
+            <a href="index.html" class="header-logo G-flex">
+              <img
+                src="assets/images/logo.svg"
+                data-light="assets/images/logo.svg"
+                data-dark="assets/images/logo-dark.svg"
+                alt="logo"
+              />
+            </a>
+            <button id="theme-toggle">🌓</button>
+
+            <div class="header-actions G-align-center">
+              <button class="btn-login">Вход</button>
+              <button class="btn-register">
+                <span class="desktop-block">Попробовать бесплатно</span>
+                <span class="mobile-block">Регистрация</span>
+              </button>
+            </div>
+
+            <!-- <button class="header-mobile-actions G-align-center">
+              <i class="icon icon-user"></i>
+              <span>Профиль</span>
+              <i class="icon icon-arrowLeft"></i>
+            </button> -->
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero-section">
+          <div class="container">
+            <div class="hero-body">
+              <div class="hero-description">
+                <div class="section-clue G-align-center">
+                  <i class="icon icon-star"></i>
+                  <span>Slidy AI</span>
+                </div>
+                <h1 class="hero-title">
+                  <span class="text-blue">AI-редактор</span> нового поколения
+                </h1>
+                <p class="hero-sub-title">
+                  Slidy AI генерирует основу,
+                  <span class="mobile-text-wrap"
+                    >а интуитивный редактор помогает</span
+                  >
+                  <span class="desktop-text-wrap"
+                    >сделать её именно такой,
+                    <span class="text-black">как вы хотите</span></span
+                  >
+                </p>
+
+                <div class="start-btn big-start-btn G-align-center">
+
+                  <img
+                    data-light="assets/images/IconContainer.svg"
+                    data-dark="assets/images/IconContainer-dark.png"
+                    src="assets/images/IconContainer.svg"
+                    alt=""
+                  />
+                  <span>Редактировать сейчас</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="hero-media-columns">
+            <div class="container">
+              <div class="media-columns-body G-flex">
+                <div class="media-left-column">
+                  <img
+                    data-light="assets/images/leftColumn.webp"
+                    data-dark="assets/images/darkLeftColumn.webp"
+                    src="assets/images/leftColumn.webp"
+                    alt="image"
+                  />
+                </div>
+                <div class="media-center-column">
+                  <img
+                    class="img-desktop"
+                    data-light="assets/images/centerColumn.webp"
+                    data-dark="assets/images/darkCenterColumn.webp"
+                    src="assets/images/centerColumn.webp"
+                    alt="image"
+                  />
+
+                  <img
+                    class="img-mobile"
+                    data-light="assets/images/centerColumnMobileLight.webp"
+                    data-dark="assets/images/centerColumnMobile.webp"
+                    src="assets/images/centerColumnMobile.webp"
+                    alt="image"
+                  />
+                </div>
+                <div class="media-right-column">
+                  <img
+                    data-light="assets/images/rightColumn.webp"
+                    data-dark="assets/images/darkRightColumn.webp"
+                    src="assets/images/rightColumn.webp"
+                    alt="image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-bg"></div>
+        </section>
+
+        <section class="advantages-section section">
+          <div class="container">
+            <div class="advantages-body">
+              <div class="advantages-titles">
+                <div class="section-clue G-align-center">
+                  <i class="icon icon-star"></i>
+                  <span>Преимущества</span>
+                </div>
+
+                <h2 class="section-title">Полная свобода творчества</h2>
+                <p class="section-sub-title">
+                  Интуитивнопонятный интерфейс и мощные инструменты
+                  <span class="text-black"
+                    >для реализации любых творческих замыслов</span
+                  >
+                </p>
+
+                <div class="start-btn desktop-block G-align-center">
+                  <img
+                    data-light="assets/images/IconContainer.svg"
+                    data-dark="assets/images/IconContainer-dark.png"
+                    src="assets/images/IconContainer.svg"
+                    alt=""
+                  />
+                  <span>Начать бесплатно</span>
+                </div>
+              </div>
+
+              <div class="advantages-card--one G-flex">
+                <img
+                  data-light="assets/images/advantagesCard1.webp"
+                  data-dark="assets/images/advantagesCard1Dark.webp"
+                  src="assets/images/advantagesCard1.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="advantages-card--two G-flex">
+                <img
+                  class="img-desktop"
+                  data-light="assets/images/advantagesCard2.webp"
+                  data-dark="assets/images/advantagesCard2Dark.webp"
+                  src="assets/images/advantagesCard2.webp"
+                  alt=""
+                />
+                <img
+                  class="img-mobile"
+                  data-light="assets/images/advantagesCard2Mobile.webp"
+                  data-dark="assets/images/advantagesCard2MobileDark.webp"
+                  src="assets/images/advantagesCard2Mobile.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="advantages-paralax parallax-anim G-flex">
+                <img src="assets/images/advantagesParallax.webp" alt="" />
+              </div>
+
+              <div class="advantages-users G-flex">
+                <img
+                  data-light="assets/images/advantagesUsers.webp"
+                  data-dark="assets/images/advantagesUsersDark.webp"
+                  src="assets/images/advantagesUsers.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="advantages-tag-card">
+                <div>
+                  <h3>2</h3>
+                  <span>млн+</span>
+                </div>
+
+                <p><span>Постоянных пользователей</span> уникального сервиса</p>
+              </div>
+              <div
+                class="start-btn advantages-start-btn mobile-block G-align-center"
+              >
+                <img
+                  data-light="assets/images/IconContainer.svg"
+                  data-dark="assets/images/IconContainer-dark.png"
+                  src="assets/images/IconContainer.svg"
+                  alt=""
+                />
+                <span>Начать бесплатно</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="editor-section section">
+          <div class="container">
+            <div class="editor-body">
+              <div class="editor-titles G-flex-column">
+                <div class="section-clue G-align-center">
+                  <i class="icon icon-star"></i>
+                  <span>AI-редактор</span>
+                </div>
+
+                <h2 class="section-title">
+                  <span class="text-blue">Ваш персональный дизайнер</span>
+                  <span class="desktop-text-wrap">на основе AI</span>
+                </h2>
+                <p class="section-sub-title">
+                  <span class="text-black">Персонализируйте презентации</span>
+                  <span class="text-wrap">
+                    с интеллектуальным подбором стилей и контента</span
+                  >
+                </p>
+              </div>
+
+              <div class="editor-cnt block-cnt G-flex">
+                <div class="editor-left-media G-flex">
+                  <img
+                    data-light="assets/images/editorLeftMedia.webp"
+                    data-dark="assets/images/editorLeftMedia-dark.webp"
+                    src="assets/images/editorLeftMedia.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="editor-hinds G-flex">
+                  <img
+                    data-light="assets/images/editorHinds.webp"
+                    data-dark="assets/images/editorHinds-dark.webp"
+                    src="assets/images/editorHinds.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="editor-media G-flex">
+                  <img
+                    class="img-desktop"
+                    data-light="assets/images/editorMedia.webp"
+                    data-dark="assets/images/editorMedia-dark.webp"
+                    src="assets/images/editorMedia.webp"
+                    alt=""
+                  />
+                  <img
+                    class="img-mobile"
+                    data-light="assets/images/editorMediaMobile.webp"
+                    data-dark="assets/images/editorMediaMobile-dark.webp"
+                    src="assets/images/editorMediaMobile.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="editor-sideBar G-flex">
+                  <img
+                    data-light="assets/images/editorSideBar.webp"
+                    data-dark="assets/images/editorSideBar-dark.webp"
+                    src="assets/images/editorSideBar.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="editor-parallax--one G-flex parallax-anim">
+                  <img
+                    data-light="assets/images/editorParallax1.webp"
+                    data-dark="assets/images/editorParallax1-dark.webp"
+                    src="assets/images/editorParallax1.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="editor-parallax-two G-flex parallax-anim">
+                  <img
+                    data-light="assets/images/editorParallax2.webp"
+                    data-dark="assets/images/editorParallax2-dark.webp"
+                    src="assets/images/editorParallax2.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="start-btn editor-start-btn G-align-center">
+                <img
+                  data-light="assets/images/IconContainer.svg"
+                  data-dark="assets/images/IconContainer-dark.png"
+                  src="assets/images/IconContainer.svg"
+                  alt=""
+                />
+                <span>Создать сейчас</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="work-process-section section">
+          <div class="container">
+            <div class="work-process-body">
+              <div class="work-process-titles G-flex-column">
+                <div class="section-clue G-align-center">
+                  <i class="icon icon-star"></i>
+                  <span>Процесс работы</span>
+                </div>
+
+                <h2 class="section-title">
+                  Начните создавать
+                  <span class="text-blue text-wrap"
+                    >профессиональные презентации</span
+                  >
+                </h2>
+                <p class="section-sub-title">
+                  <span class="text-black"> Быстрый старт </span>
+                  для новичков и профессионалов
+                </p>
+              </div>
+
+              <div class="work-process-cnt block-cnt">
+                <div class="work-big-item">
+                  <div class="work-item-titles">
+                    <img
+                      class="icon-light"
+                      src="assets/images/light.png"
+                      alt=""
+                    />
+
+                    <h3 class="block-title">Начните с идеи</h3>
+                    <p class="block-sub-title">
+                      Добавляйте, редактируйте и меняйте слайды. Нейросеть
+                      поможет
+                      <span class="text-black"
+                        >создать презентацию с нуля за пару минут</span
+                      >
+                    </p>
+
+                    <div class="start-btn big-start-btn G-align-center">
+                      <img
+                        data-light="assets/images/IconContainer.svg"
+                        data-dark="assets/images/IconContainer-dark.png"
+                        src="assets/images/IconContainer.svg"
+                        alt=""
+                      />
+                      <span>Регистрация бесплатно</span>
+                    </div>
+                  </div>
+                  <div class="work-big-media G-flex">
+                    <img
+                      data-light="assets/images/workImageContainer.webp"
+                      data-dark="assets/images/workImageContainer-dark.webp"
+                      src="assets/images/workImageContainer.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="work-item-bg G-flex">
+                    <img
+                      class="img-desktop"
+                      data-light="assets/images/workItemBg.png"
+                      data-dark="assets/images/workItemBg-dark.png"
+                      src="assets/images/workItemBg.png"
+                      alt=""
+                    />
+                    <img
+                      class="img-mobile"
+                      data-light="assets/images/workItemBgMobile.png"
+                      data-dark="assets/images/workItemBg-dark.png"
+                      src="assets/images/workItemBgMobile.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="work-process-items G-flex">
+                  <div class="work-process-item">
+                    <div class="work-item-media G-flex">
+                      <img
+                        data-light="assets/images/workItemChips.webp"
+                        data-dark="assets/images/workItemChips-dark.webp"
+                        src="assets/images/workItemChips.webp"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="work-right-blur G-flex">
+                      <img
+                        data-light="assets/images/rightBlur.png"
+                        data-dark="assets/images/rightBlur-dark.png"
+                        src="assets/images/rightBlur.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="work-left-blur G-flex">
+                      <img
+                        data-light="assets/images/leftBlur.png"
+                        data-dark="assets/images/leftBlur-dark.png"
+                        src="assets/images/leftBlur.png"
+                        alt="image"
+                      />
+                    </div>
+
+                    <div class="work-item-titles">
+                      <h3 class="block-title">Редактируйте, как хотите</h3>
+                      <p class="block-sub-title">
+                        Только полезные инструменты. Для новых пользователей
+                        подготовили
+                        <span class="text-black"
+                          >гайд-обучение по функционалу</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="work-process-item">
+                    <div class="work-item-image G-flex">
+                      <img
+                        class="img-desktop"
+                        data-light="assets/images/workItemChips2.webp"
+                        data-dark="assets/images/workItemChips2-dark.webp"
+                        src="assets/images/workItemChips2.webp"
+                        alt="image"
+                      />
+
+                      <img
+                        class="img-mobile"
+                        data-light="assets/images/workItemChips2Mobile.webp"
+                        data-dark="assets/images/workItemChips2Mobile-dark.webp"
+                        src="assets/images/workItemChips2Mobile.webp"
+                        alt="image"
+                      />
+                    </div>
+
+                    <div class="work-item-titles">
+                      <h3 class="block-title">И даже меняйте картинки</h3>
+                      <p class="block-sub-title">
+                        Нейросеть автоматически добавит нужный контент,
+                        вам останется только
+                        <span class="text-black">отредактировать детали</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work-process-mobile-ctn">
+                <div class="swiper work-process-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="work-big-item">
+                        <div class="work-item-titles">
+                          <img
+                            class="icon-light"
+                            src="assets/images/light.png"
+                            alt=""
+                          />
+
+                          <h3 class="block-title">Начните с идеи</h3>
+                          <p class="block-sub-title">
+                            Добавляйте, редактируйте и меняйте слайды. Нейросеть
+                            поможет
+                            <span class="text-black"
+                              >создать презентацию с нуля за пару минут</span
+                            >
+                          </p>
+
+                          <div class="start-btn G-align-center">
+                            <img
+                              data-light="assets/images/IconContainer.svg"
+                              data-dark="assets/images/IconContainer-dark.png"
+                              src="assets/images/IconContainer.svg"
+                              alt=""
+                            />
+                            <span>Регистрация бесплатно</span>
+                          </div>
+                        </div>
+                        <div class="work-big-media G-flex">
+                          <img
+                            data-light="assets/images/workImageContainer.webp"
+                            data-dark="assets/images/workImageContainer-dark.webp"
+                            src="assets/images/workImageContainer.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="work-item-bg G-flex">
+                          <img
+                            class="img-desktop"
+                            data-light="assets/images/workItemBg.png"
+                            data-dark="assets/images/workItemBg-dark.png"
+                            src="assets/images/workItemBg.png"
+                            alt=""
+                          />
+                          <img
+                            class="img-mobile"
+                            data-light="assets/images/workItemBgMobile.png"
+                            data-dark="assets/images/workItemBgMobile-dark.png"
+                            src="assets/images/workItemBgMobile.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="work-process-item">
+                        <div class="work-item-media G-flex">
+                          <img
+                            class="img-desktop"
+                            data-light="assets/images/workItemChips.webp"
+                            data-dark="assets/images/workItemChips-dark.webp"
+                            src="assets/images/workItemChips.webp"
+                            alt="image"
+                          />
+                          <img
+                            class="img-mobile"
+                            data-light="assets/images/workItemChipsMobile.webp"
+                            data-dark="assets/images/workItemChipsMobile-dark.webp"
+                            src="assets/images/workItemChipsMobile.webp"
+                            alt="image"
+                          />
+                        </div>
+                        <div class="work-right-blur G-flex">
+                          <img
+                            data-light="assets/images/rightBlur.png"
+                            data-dark="assets/images/rightBlur-dark.png"
+                            src="assets/images/rightBlur.png"
+                            alt="image"
+                          />
+                        </div>
+                        <div class="work-left-blur G-flex">
+                          <img
+                            data-light="assets/images/leftBlur.png"
+                            data-dark="assets/images/leftBlur-dark.png"
+                            src="assets/images/leftBlur.png"
+                            alt="image"
+                          />
+                        </div>
+
+                        <div class="work-item-titles">
+                          <h3 class="block-title">Редактируйте, как хотите</h3>
+                          <p class="block-sub-title">
+                            Только полезные инструменты. Для новых пользователей
+                            подготовили
+                            <span class="text-black"
+                              >гайд-обучение по функционалу</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="work-process-item">
+                        <div class="work-item-image G-flex">
+                          <img
+                            class="img-desktop"
+                            data-light="assets/images/workItemChips2.webp"
+                            data-dark="assets/images/workItemChips2-dark.webp"
+                            src="assets/images/workItemChips2.webp"
+                            alt="image"
+                          />
+
+                          <img
+                            class="img-mobile"
+                            data-light="assets/images/workItemChips2Mobile.webp"
+                            data-dark="assets/images/workItemChips2Mobile-dark.webp"
+                            src="assets/images/workItemChips2Mobile.webp"
+                            alt="image"
+                          />
+                        </div>
+
+                        <div class="work-item-titles">
+                          <h3 class="block-title">И даже меняйте картинки</h3>
+                          <p class="block-sub-title">
+                            Нейросеть автоматически добавит нужный контент,
+                            вам останется только
+                            <span class="text-black"
+                              >отредактировать детали</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="work-swiper-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="possibilities-section section">
+          <div class="container">
+            <div class="possibilities-body">
+              <div class="possibilities-header G-align-end">
+                <div class="possibilities-titles">
+                  <div class="section-clue G-align-center">
+                    <i class="icon icon-star"></i>
+                    <span>Возможности</span>
+                  </div>
+
+                  <h2 class="section-title">
+                    <span class="text-blue">Профессиональные инструменты</span>
+                    <span class="desktop-text-wrap"> для воплощения любых идей</span>
+                  </h2>
+                  <p class="section-sub-title">
+                    <span class="text-black">Полный набор функций</span>
+                    для работы с графикой,
+                    <span class="desktop-text-wrap">текстом и анимацией</span>
+                  </p>
+                </div>
+
+                <div class="possibilities-arrows G-align-center">
+                  <button
+                    class="possibilities-arrow swiper-button-prev "
+                  >
+                    <i class="icon icon-arrowLeft"></i>
+                  </button>
+                  <button
+                    class="possibilities-arrow swiper-button-next "
+                  >
+                    <i class="icon icon-arrowLeft"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="possibilities-cnt block-cnt">
+                <div class="swiper possibilities-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="possibilities-slide-wrapper G-flex">
+                        <div class="possibilities-big-slide">
+                          <div class="p-big-slide-header G-align-center">
+                            <img src="assets/images/stars2.png" alt="" />
+
+                            <a
+                              class="arrow-link blue-arrow-link G-center"
+                              href="#"
+                            >
+                              <i class="icon icon-arrow"></i>
+                            </a>
+                          </div>
+
+                          <div class="p-big-slide-titles">
+                            <h3 class="block-title">AI-генерация контента</h3>
+                            <p class="block-sub-title">
+                              ИИ создаёт тексты, подбирает изображения
+                              и автоматически заполняет слайды,
+                              <span class="text-black"
+                                >помогая улучшать готовые материалы</span
+                              >
+                            </p>
+                          </div>
+
+                          <div class="p-big-slide-media G-flex">
+                            <img
+                              src="assets/images/bigSlideMedia.webp"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="possibilities-small-slide desktop-slide">
+                          <div class="p-small-slide-header G-align-start">
+                            <div class="docs-items G-flex">
+                              <button>PDF</button>
+                              <button>PPTX</button>
+                              <button>Keynote</button>
+                            </div>
+
+                            <a
+                              class="arrow-link white-arrow-link G-center"
+                              href="#"
+                            >
+                              <i class="icon icon-arrow"></i>
+                            </a>
+                          </div>
+
+                          <div class="p-small-slide-titles">
+                            <h3 class="block-title">Удобный экспорт</h3>
+                            <p class="block-sub-title">
+                              Сохраняйте работы
+                              <span class="text-black">в любых форматах</span>
+                            </p>
+                          </div>
+
+                          <div class="small-slide-bg G-flex">
+                            <img
+                              data-light="assets/images/smallitemBg.png"
+                              data-dark="assets/images/smallitemBg-dark.png"
+                              src="assets/images/smallitemBg.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="possibilities-average-slide desktop-slide">
+                          <div class="p-big-slide-header G-align-center">
+                            <img src="assets/images/decor.png" alt="" />
+
+                            <a
+                              class="arrow-link blue-arrow-link G-center"
+                              href="#"
+                            >
+                              <i class="icon icon-arrow"></i>
+                            </a>
+                          </div>
+
+                          <div class="p-average-media G-flex">
+                            <img
+                              data-light="assets/images/pAverageMedia.webp"
+                              data-dark="assets/images/pAverageMedia-dark.webp"
+                              src="assets/images/pAverageMedia.webp"
+                              alt="image"
+                            />
+                          </div>
+                          <div class="p-average-slide-titles">
+                            <h3 class="block-title">Персонализация стиля</h3>
+                            <p class="block-sub-title">
+                              Изменяйте цвета, шрифты и стили элементов,
+                              <span class="text-black"
+                                >создавайте свои шаблоны</span
+                              >
+                              для будущих проектов
+                            </p>
+                          </div>
+
+                          <div class="average-slide-bg G-flex">
+                            <img
+                              data-light="assets/images/averagetemBg.png"
+                              data-dark="assets/images/averageitemBg-dark.png"
+                              src="assets/images/averagetemBg.png"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide mobile-slide">
+                      <div class="possibilities-small-slide">
+                        <div class="p-small-slide-header G-align-start">
+                          <div class="docs-items G-flex">
+                            <button>PDF</button>
+                            <button>PPTX</button>
+                            <button>Keynote</button>
+                          </div>
+
+                          <a
+                            class="arrow-link white-arrow-link G-center"
+                            href="#"
+                          >
+                            <i class="icon icon-arrow"></i>
+                          </a>
+                        </div>
+
+                        <div class="p-small-slide-titles">
+                          <h3 class="block-title">Удобный экспорт</h3>
+                          <p class="block-sub-title">
+                            Сохраняйте работы
+                            <span class="text-black">в любых форматах</span>
+                          </p>
+                        </div>
+
+                        <div class="small-slide-bg G-flex">
+                          <img
+                            data-light="assets/images/smallitemBg.png"
+                            data-dark="assets/images/smallitemBg-dark.png"
+                            src="assets/images/smallitemBg.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide mobile-slide">
+                      <div class="possibilities-average-slide">
+                        <div class="p-big-slide-header G-align-center">
+                          <img src="assets/images/decor.png" alt="" />
+
+                          <a
+                            class="arrow-link blue-arrow-link G-center"
+                            href="#"
+                          >
+                            <i class="icon icon-arrow"></i>
+                          </a>
+                        </div>
+
+                        <div class="p-average-media G-flex">
+                          <img
+                            data-light="assets/images/pAverageMedia.webp"
+                            data-dark="assets/images/pAverageMedia-dark.webp"
+                            src="assets/images/pAverageMedia.webp"
+                            alt="image"
+                          />
+                        </div>
+                        <div class="p-average-slide-titles">
+                          <h3 class="block-title">Персонализация стиля</h3>
+                          <p class="block-sub-title">
+                            Изменяйте цвета, шрифты и стили элементов,
+                            <span class="text-black"
+                              >создавайте свои шаблоны</span
+                            >
+                            для будущих проектов
+                          </p>
+                        </div>
+
+                        <div class="average-slide-bg G-flex">
+                          <img
+                            data-light="assets/images/averagetemBg.png"
+                            data-dark="assets/images/averageitemBg-dark.png"
+                            src="assets/images/averagetemBg.png"
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="possibilities-slide-wrapper G-flex">
+                        <div class="possibilities-big-slide">
+                          <div class="p-big-slide-header G-align-center">
+                            <img src="assets/images/fire.png" alt="" />
+
+                            <a
+                              class="arrow-link blue-arrow-link G-center"
+                              href="#"
+                            >
+                              <i class="icon icon-arrow"></i>
+                            </a>
+                          </div>
+
+                          <div class="p-big-slide-titles">
+                            <h3 class="block-title">Мгновенное обучение</h3>
+                            <p class="block-sub-title">
+                              Интерактивные подсказки и пошаговые инструкции
+                              помогут
+                              <span class="text-black"
+                                >освоить редактор за 5 минут</span
+                              >
+                            </p>
+                          </div>
+
+                          <div class="p-big-slide-image G-flex">
+                            <img
+                              data-light="assets/images/bigSlideImg.webp"
+                              data-dark="assets/images/bigSlideImg-dark.webp"
+                              src="assets/images/bigSlideImg.webp"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="possibilities-small-slide desktop-slide">
+                          <div class="p-small-slide-header G-align-start">
+                            <div class="docs-decor G-flex">
+                              <img src="assets/images/decor2.png" alt="" />
+                            </div>
+
+                            <a
+                              class="arrow-link white-arrow-link G-center"
+                              href="#"
+                            >
+                              <i class="icon icon-arrow"></i>
+                            </a>
+                          </div>
+
+                          <div class="p-small-slide-titles">
+                            <h3 class="block-title">Умные шаблоны</h3>
+                            <p class="block-sub-title">
+                              <span class="text-black">Более 10К</span>
+                              адаптивных макетов для любых задач
+                            </p>
+                          </div>
+
+                          <div class="small-slide-bg G-flex">
+                            <img
+                              data-light="assets/images/smallitemBg.png"
+                              data-dark="assets/images/smallitemBg-dark.png"
+                              src="assets/images/smallitemBg.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="possibilities-average-slide desktop-slide">
+                          <div class="p-big-slide-header G-align-center">
+                            <img src="assets/images/pen.png" alt="" />
+
+                            <a
+                              class="arrow-link blue-arrow-link G-center"
+                              href="#"
+                            >
+                              <i class="icon icon-arrow"></i>
+                            </a>
+                          </div>
+
+                          <div class="p-average-img G-flex">
+                            <img
+                              src="assets/images/pAverageImg.webp"
+                              alt="image"
+                            />
+                          </div>
+                          <div class="p-average-slide-titles">
+                            <h3 class="block-title">Инструменты дизайна</h3>
+                            <p class="block-sub-title">
+                              <span class="text-black"
+                                >Интуитивное редактирование,</span
+                              >
+                              точное выравнивание, богатая библиотека иконок
+                              и стоковых фото
+                            </p>
+                          </div>
+
+                          <div class="average-slide-bg G-flex">
+                            <img
+                              data-light="assets/images/averagetemBg.png"
+                              data-dark="assets/images/averageitemBg-dark.png"
+                              src="assets/images/averagetemBg.png"
+                              alt="image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide mobile-slide">
+                      <div class="possibilities-small-slide">
+                        <div class="p-small-slide-header G-align-start">
+                          <div class="docs-decor G-flex">
+                            <img src="assets/images/decor2.png" alt="" />
+                          </div>
+
+                          <a
+                            class="arrow-link white-arrow-link G-center"
+                            href="#"
+                          >
+                            <i class="icon icon-arrow"></i>
+                          </a>
+                        </div>
+
+                        <div class="p-small-slide-titles">
+                          <h3 class="block-title">Умные шаблоны</h3>
+                          <p class="block-sub-title">
+                            <span class="text-black">Более 10К</span>
+                            адаптивных макетов для любых задач
+                          </p>
+                        </div>
+
+                        <div class="small-slide-bg G-flex">
+                          <img
+                            data-light="assets/images/smallitemBg.png"
+                            data-dark="assets/images/smallitemBg-dark.png"
+                            src="assets/images/smallitemBg.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide mobile-slide">
+                      <div class="possibilities-average-slide">
+                        <div class="p-big-slide-header G-align-center">
+                          <img src="assets/images/pen.png" alt="" />
+
+                          <a
+                            class="arrow-link blue-arrow-link G-center"
+                            href="#"
+                          >
+                            <i class="icon icon-arrow"></i>
+                          </a>
+                        </div>
+
+                        <div class="p-average-img G-flex">
+                          <img
+                            src="assets/images/pAverageImg.webp"
+                            alt="image"
+                          />
+                        </div>
+                        <div class="p-average-slide-titles">
+                          <h3 class="block-title">Инструменты дизайна</h3>
+                          <p class="block-sub-title">
+                            <span class="text-black"
+                              >Интуитивное редактирование,</span
+                            >
+                            точное выравнивание, богатая библиотека иконок
+                            и стоковых фото
+                          </p>
+                        </div>
+
+                        <div class="average-slide-bg G-flex">
+                          <img
+                            data-light="assets/images/averagetemBg.png"
+                            data-dark="assets/images/averageitemBg-dark.png"
+                            src="assets/images/averagetemBg.png"
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div
+                    class="possibilities-swiper-pagination swiper-pagination"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="for-whom-section section">
+          <div class="container">
+            <div class="for-whom-body">
+              <div class="for-whom-titles G-flex-column">
+                <div class="section-clue G-align-center">
+                  <i class="icon icon-star"></i>
+                  <span>Для кого</span>
+                </div>
+
+                <h2 class="section-title">
+                  Для тех, кто ценит
+                  <span class="text-blue mobile-text-wrap">качество и скорость</span>
+                </h2>
+                <p class="section-sub-title">
+                  Неважно, в какой вы сфере — редактор
+                  <span class="text-wrap"
+                    >адаптируется
+                    <span class="text-black">под ваши задачи</span></span
+                  >
+                </p>
+              </div>
+
+              <div class="for-whom-columns">
+                <div class="for-whom-left-column G-flex-column">
+                  <div class="for-whom-average-item">
+                    <div class="f-small-item-titles">
+                      <h3 class="block-title">Фриланс</h3>
+                      <p class="block-sub-title">
+                        Показывайте
+                        <span class="text-black">портфолио и презентации </span>
+                        клиентам
+                      </p>
+                    </div>
+
+                    <div class="f-average-item-bg G-flex">
+                      <img
+                        data-light="assets/images/fSmalltemBg.webp"
+                        data-dark="assets/images/fSmalltemBg-dark.webp"
+                        src="assets/images/fSmalltemBg.webp"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="for-whom-small-item desktop-block">
+                    <img src="assets/images/fSmalltemImg.webp" alt="image" />
+                  </div>
+                </div>
+
+                <div class="for-whom-center-column G-flex-column">
+                  <div class="for-whom-big-item G-flex-column">
+                    <div class="f-big-item-image G-flex">
+                      <img class="img-mobile" src="assets/images/fBigItemImageMobile.webp" alt="" />
+               <img class="img-desktop" src="assets/images/fBigItemImage.webp" alt="" />
+
+                    </div>
+
+                    <div class="f-big-item-titles">
+                      <h3 class="block-title">Маркетинг</h3>
+                      <p class="block-sub-title">
+                        Создавайте
+                        <span class="text-black">продающие презентации,</span>
+                        где каждый слайд — это аргумент
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="for-whom-small-item desktop-block">
+                    <img
+                      data-light="assets/images/fSmalltemImg2.webp"
+                      data-dark="assets/images/fSmalltemImg2-dark.webp"
+                      src="assets/images/fSmalltemImg2.webp"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="round-timber G-center desktop-block">
+                    <div class="round-timber-text G-flex">
+                      <img
+                        data-light="assets/images/roundTimberText.webp"
+                        data-dark="assets/images/roundTimberText-dark.webp"
+                        src="assets/images/roundTimberText.webp"
+                        alt=""
+                      />
+                    </div>
+                    <i class="icon icon-arrow"></i>
+                  </div>
+                </div>
+                <div class="for-whom-right-column G-flex-column">
+                  <div class="f-right-small-item G-flex">
+                    <img
+                      data-light="assets/images/fSmalltemImg3.webp"
+                      data-dark="assets/images/fSmalltemImg3-dark.webp"
+                      src="assets/images/fSmalltemImg3.webp"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="for-whom-right-logo G-flex">
+                    <img
+                      data-light="assets/images/forWhomLogo.webp"
+                      data-dark="assets/images/forWhomLogo-dark.webp"
+                      src="assets/images/forWhomLogo.webp"
+                      alt="image"
+                    />
+                  </div>
+
+                  <div class="f-right-average-item G-flex-column">
+                    <div class="f-right-average-bg G-flex">
+                      <img
+                        data-light="assets/images/rightAverageImg.webp"
+                        data-dark="assets/images/rightAverageImg-dark.webp"
+                        src="assets/images/rightAverageImg.webp"
+                        alt=""
+                      />
+                    </div>
+
+                       <div class="f-right-average-decor ">
+                      <img
+                        data-light="assets/images/averageDecorMobile.png"
+                        data-dark="assets/images/averageDecorMobile-dark.png"
+                        src="assets/images/averageDecorMobile.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="f-right-average-titles">
+                      <h3 class="block-title">Аналитика</h3>
+                      <p class="block-sub-title">
+                        Визуализируйте
+                        <span class="text-black">сложные данные</span>
+                        в дашборды
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="for-whom-parallax G-flex parallax-anim">
+                  <img src="assets/images/advantagesParallax.webp" alt="" />
+                </div>
+
+                
+                  <div class="for-mobile-small-item mobile-block">
+                    <img
+                      data-light="assets/images/fSmalltemImg2.webp"
+                      data-dark="assets/images/fSmalltemImg2-dark.webp"
+                      src="assets/images/fSmalltemImg2.webp"
+                      alt=""
+                    />
+                  </div>
+
+                <div class="round-timber G-center mobile-block">
+                    <div class="round-timber-text G-flex">
+                      <img
+                        data-light="assets/images/roundTimberText.webp"
+                        data-dark="assets/images/roundTimberText-dark.webp"
+                        src="assets/images/roundTimberText.webp"
+                        alt=""
+                      />
+                    </div>
+                    <i class="icon icon-arrow"></i>
+                  </div>
+
+                   <div class="for-whom-small-item mobile-block">
+                    <img src="assets/images/fSmalltemImg.webp" alt="image" />
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-us-section section">
+          <div class="container">
+            <div class="about-us-body G-flex">
+              <div class="about-us-titles">
+                <div class="section-clue G-align-center">
+                  <i class="icon icon-star"></i>
+                  <span>Slidy AI</span>
+                </div>
+
+                <h2 class="section-title">
+                  <span class="mobile-text-wrap">Готовы создавать</span> презентации
+                  <span class="text-blue">на новом <span class="mobile-text-wrap">уровне?</span></span>
+                </h2>
+                <p class="section-sub-title">
+                  <span class="text-black"
+                    >Присоединяйтесь к профессионалам,</span
+                  >
+                  <span class="mobile-text-wrap">которые уже используют Slidy AI</span> для своих проектов
+                </p>
+
+                <div class="start-btn big-start-btn desktop-block G-align-center">
+                  <img
+                    data-light="assets/images/IconContainer.svg"
+                    data-dark="assets/images/IconContainer-dark.png"
+                    src="assets/images/IconContainer.svg"
+                    alt=""
+                  />
+                  <span>Регистрация бесплатно</span>
+                </div>
+
+                  <div class="about-us-media G-flex mobile-block">
+                <img
+                  data-light="assets/images/aboutUsMedia.webp"
+                  data-dark="assets/images/aboutUsMedia-dark.webp"
+                  src="assets/images/aboutUsMedia.webp"
+                  alt=""
+                />
+              </div>
+
+                <div class="about-us-tags G-flex">
+                  <div class="about-us-tag G-align-center">
+                    <img src="assets/images/phone.png" alt="phone" />
+                    <span>Работа с любого устройства</span>
+                  </div>
+
+                  <div class="about-us-tag G-align-center">
+                    <img src="assets/images/fast.png" alt="fast" />
+                    <span>Быстрый результат</span>
+                  </div>
+
+                  <div class="about-us-tag G-align-center">
+                    <img src="assets/images/decor3.png" alt="decor" />
+                    <span>Дизайн без навыков </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-us-media G-flex desktop-block">
+                <img
+                  data-light="assets/images/aboutUsMedia.webp"
+                  data-dark="assets/images/aboutUsMedia-dark.webp"
+                  src="assets/images/aboutUsMedia.webp"
+                  alt=""
+                />
+              </div>
+
+
+               <div class="start-btn big-start-btn mobile-block G-align-center">
+                  <img
+                    data-light="assets/images/IconContainer.svg"
+                    data-dark="assets/images/IconContainer-dark.png"
+                    src="assets/images/IconContainer.svg"
+                    alt=""
+                  />
+                  <span>Регистрация бесплатно</span>
+                </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-body G-align-start">
+            <div class="footer-column G-flex-column">
+              <p class="footer-text">
+                По всем вопросам, связанным с работой сервиса, вы можете
+                связаться с нами по электронной почте:
+                <a href="mailto:help@slidy.ai">help@slidy.ai</a>
+              </p>
+              <p class="footer-clue desktop-block">© 2025 Slidy AI. Все права защищены</p>
+            </div>
+            <div class="footer-column footer-nav-column G-align-center">
+              <nav class="footer-nav">
+                <ul>
+                  <li>
+                    <a href="#">Договор оферты</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer-links G-align-start">
+                <a href="">
+                  <img src="assets/images/telegram.png" alt="" />
+                </a>
+
+                <a href="">
+                  <img src="assets/images/vk.png" alt="" />
+                </a>
+              </div>
+            </div>
+                          <p class="footer-clue mobile-block">© 2025 Slidy AI. Все права защищены</p>
+
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
