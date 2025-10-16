@@ -56,3 +56,17 @@ if (parallaxBlocks.length > 0) {
   }
   loop();
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const imgs = document.querySelectorAll('img[data-src]');
+  const loadImg = (img) => img.setAttribute('src', img.getAttribute('data-src'));
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        loadImg(e.target);
+        obs.unobserve(e.target);
+      }
+    });
+  });
+  imgs.forEach(img => observer.observe(img));
+});
