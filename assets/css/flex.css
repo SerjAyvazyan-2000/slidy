@@ -3,11 +3,9 @@
 .G-flex {
     display: flex;
 }
-
 .G-inline-flex {
     display: inline-flex;
 }
-
 .G-center {
     justify-content: center;
     align-items: center;
