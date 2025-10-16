@@ -1,6 +1,4 @@
 @import 'assets/images/icons/icon.css';
-
-
 html,
 body,
 div,
@@ -34,7 +32,6 @@ td,
 video,
 canvas,
 section,
-    /*commonly used tags*/
 applet,
 object,
 blockquote,
@@ -337,7 +334,7 @@ main {
     transition: .5s;
     position: relative;
     height: 48px;
-      transition: all 0.4s ease;
+      transition: all 0.5s ease;
 
 
 }
@@ -348,7 +345,7 @@ main {
   left: 4px;
   top: 3.5px;
   transform-origin: center;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 .start-btn span {
   transition: .5s;
@@ -356,6 +353,7 @@ main {
 
 .start-btn:hover img {
   left: 79%;
+  transform: rotate(190deg);
 
 }
 
@@ -1432,16 +1430,20 @@ opacity: .7;
 .round-timber-text img {
   width: 135px;
   height: 135px;
-  animation: rotateText 12s linear infinite;
+  animation: rotateText 18s linear infinite;
   transform-origin: center;
 }
 
 
-
+.round-timber i {
+ transition: .4s;
+}
 .round-timber:hover {
   background: var(--text-color);
 }
-
+.round-timber:hover i {
+ transform: scale(1.1);
+}
 @keyframes rotateText {
   from {
     transform: rotate(0deg);
@@ -1841,19 +1843,22 @@ opacity: .7;
 
 @media (max-width: 576px) {
   .hero-bg {
-    background-image: url(../images/BGMobile.webp);
+    background-image: url(./assets/images/BGMobile.webp);
 
     border-radius: 0 0 12px 12px;
   }
   .advantages-tag-card {
     display: none;
   }
+  .media-center-column{
+    max-width: 100%;
+  }
   .advantages-users {
     display: none;
   }
 
   [data-theme="dark"] .hero-bg {
-    background-image: url("../images/BG-darkMobile.webp");
+    background-image: url("./assets/images/BG-darkMobile.webp");
   }
 
   .hero-title {

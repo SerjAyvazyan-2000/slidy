@@ -25,35 +25,31 @@ function updateImages(theme) {
 }
 const initialTheme = document.documentElement.getAttribute("data-theme");
 updateImages(initialTheme);
+
+
 const parallaxBlocks = document.querySelectorAll(".parallax-anim");
+
 if (parallaxBlocks.length > 0) {
-  let mouseX = 0, mouseY = 0;
-  let scrollY = window.scrollY;
-  document.addEventListener("mousemove", (e) => {
-    const targetX = (e.clientX / window.innerWidth - 0.5) * 6; 
-    const targetY = (e.clientY / window.innerHeight - 0.5) * 3; 
-    mouseX = targetX;
-    mouseY = targetY;
-  });
   window.addEventListener("scroll", () => {
-    scrollY = window.scrollY;
-    applyParallax();
-  });
-  function applyParallax() {
+    if (window.innerWidth < 576) {
+      parallaxBlocks.forEach(block => {
+        const img = block.querySelector("img");
+        img.style.transform = "translate(0, 0)";
+      });
+      return; 
+    }
+
+    const scrollTop = window.scrollY;
+
     parallaxBlocks.forEach((block) => {
       const img = block.querySelector("img");
       const rect = block.getBoundingClientRect();
 
       if (rect.top < window.innerHeight && rect.bottom > 0) {
-        const scrollOffset = rect.top * -0.1; 
-        img.style.transform = `translate(${mouseX}px, ${scrollOffset}px)`;
+          const offsetY = rect.top * 0.03;
+        const offsetX = rect.top * 0.015;
+        img.style.transform = `translate(${offsetX}px, ${-offsetY}px)`;
       }
     });
-  }
-  function loop() {
-    applyParallax();
-    requestAnimationFrame(loop);
-  }
-  loop();
+  });
 }
-
