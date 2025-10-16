@@ -1,30 +1,21 @@
 const header = document.querySelector('header');
-
 window.addEventListener('scroll', function () {
     const headerTop = document.querySelector('header')
-
-
     if (window.scrollY > 0) {
         headerTop.classList.add('moved');
-
     } else {
         headerTop.classList.remove('moved');
 
     }
 });
 
-
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const savedTheme = localStorage.getItem("theme");
-
 if (savedTheme) {
   document.documentElement.setAttribute("data-theme", savedTheme);
 } else {
   document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
 }
-
-
-
 function updateImages(theme) {
   const images = document.querySelectorAll("img[data-light][data-dark]");
   images.forEach(img => {
@@ -32,31 +23,22 @@ function updateImages(theme) {
     img.src = newSrc;
   });
 }
-
 const initialTheme = document.documentElement.getAttribute("data-theme");
 updateImages(initialTheme);
-
-
-
-
 const parallaxBlocks = document.querySelectorAll(".parallax-anim");
-
 if (parallaxBlocks.length > 0) {
   let mouseX = 0, mouseY = 0;
   let scrollY = window.scrollY;
-
   document.addEventListener("mousemove", (e) => {
     const targetX = (e.clientX / window.innerWidth - 0.5) * 6; 
     const targetY = (e.clientY / window.innerHeight - 0.5) * 3; 
     mouseX = targetX;
     mouseY = targetY;
   });
-
   window.addEventListener("scroll", () => {
     scrollY = window.scrollY;
     applyParallax();
   });
-
   function applyParallax() {
     parallaxBlocks.forEach((block) => {
       const img = block.querySelector("img");
@@ -68,11 +50,9 @@ if (parallaxBlocks.length > 0) {
       }
     });
   }
-
   function loop() {
     applyParallax();
     requestAnimationFrame(loop);
   }
-
   loop();
 }

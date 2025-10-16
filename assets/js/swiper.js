@@ -3,13 +3,10 @@ const swiper = new Swiper(".possibilities-swiper", {
   loop: true,
   loopedSlides: 10, 
   centeredSlides: false,
-
-
   pagination: {
     el: ".possibilities-swiper-pagination",
     clickable: true,
   },
-
   navigation: {
     nextEl: ".possibilities-arrows .swiper-button-next",
     prevEl: ".possibilities-arrows .swiper-button-prev",
@@ -22,15 +19,12 @@ const swiper = new Swiper(".possibilities-swiper", {
     992: { slidesPerView: 2.5 },
     1263: { slidesPerView: 2.6 },
     1300: { slidesPerView: 'auto' },
-
   },
 });
-
 const workSwiper = new Swiper(".work-process-swiper", {
   spaceBetween: 20,
   loop: true,
   slidesPerView: 1,
-
   pagination: {
     el: ".work-swiper-pagination",
     clickable: true,
